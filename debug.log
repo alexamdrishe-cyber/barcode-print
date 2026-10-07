@@ -1,0 +1,346 @@
+[2026-10-07 19:25:13] --- start ---
+[2026-10-07 19:25:29] PRINT ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 246, in do_print
+    print_labels(printer, start, count, w_mm, h_mm)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\my_game\Barcode\barcode_print.py", line 98, in print_labels
+    img = make_label(start + i, label_w_mm, label_h_mm)
+  File "Z:\my_game\Barcode\barcode_print.py", line 65, in make_label
+    bc_img = Image.open(io.BytesIO(data)).convert("RGB")
+                        ~~~~~~~~~~^^^^^^
+TypeError: a bytes-like object is required, not 'Image'
+
+[2026-10-07 19:27:26] --- start ---
+[2026-10-07 19:31:04] --- start ---
+[2026-10-07 19:50:02] --- start ---
+[2026-10-07 19:50:08] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б
+
+[2026-10-07 19:50:08] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у
+
+[2026-10-07 19:50:08] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б
+
+[2026-10-07 19:50:08] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б, у
+
+[2026-10-07 19:50:09] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б
+
+[2026-10-07 19:50:09] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б, а
+
+[2026-10-07 19:50:20] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: ф
+
+[2026-10-07 19:50:20] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: ф, ы
+
+[2026-10-07 19:50:20] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: ф, ы, а
+
+[2026-10-07 19:50:21] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: ф, ы
+
+[2026-10-07 19:50:21] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: ф
+
+[2026-10-07 19:50:28] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б
+
+[2026-10-07 19:50:28] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у
+
+[2026-10-07 19:50:28] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б
+
+[2026-10-07 19:50:28] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б, у
+
+[2026-10-07 19:50:28] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у, б
+
+[2026-10-07 19:50:29] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б, у
+
+[2026-10-07 19:50:29] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: б
+
+[2026-10-07 19:52:42] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: У
+
+[2026-10-07 19:52:45] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: у
+
+[2026-10-07 19:52:47] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: У
+
+[2026-10-07 19:52:49] PREVIEW ERROR:
+Traceback (most recent call last):
+  File "Z:\my_game\Barcode\barcode_print.py", line 318, in update_preview
+    img = make_label(code, w_mm, h_mm, top_text)
+  File "Z:\my_game\Barcode\barcode_print.py", line 103, in make_label
+    bc = CODE128(code, writer=ImageWriter())
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 155, in __init__
+    check_code(self.code, self.name, code128.ALL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Popka\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\barcode\codex.py", line 35, in check_code
+    raise IllegalCharacterError(
+    ...<3 lines>...
+    )
+barcode.errors.IllegalCharacterError: The following characters are not valid for Code 128: У
+
